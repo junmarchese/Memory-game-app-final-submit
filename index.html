@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="screen screen1">
+        <div>
+            <h1>
+                Match<br/>
+                Sea<br/>
+                Animals!
+            </h1>
+            <p>Best Score: <span id="best-score"></span></p>
+            <p>Your Score: <span id="current-score"></span></p>
+            <button id="startBtn">Start Game</button>
+        </div>
+    </section>
+
+    <section class="screen screen2">
+        <p class="fixed-corner">Your Score: <span class="current-score-game"></span></p>
+        <div>
+            <div class="game-container" id="game">
+                <ul class="cards-wrapper">
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="screen screen3">
+        <div>
+            <h1>YOU are the WINNER!!!</h1>
+            <p>Your Score:  <span id="final-score"></span></p>
+            <p>Best Score: <span id="best-score2"></span></p>
+            <button id="restartButton" class="btn btn-primary">PLAY AGAIN?</button>
+        </div>
+    </section>
+
+<script src="script.js" defer></script>
+</body>
+</html>

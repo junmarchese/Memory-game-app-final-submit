@@ -1,0 +1,129 @@
+html {
+    font-family: fantasy;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0px;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div{
+        max-width: 900px;
+    }
+}
+
+.screen1{
+    text-align: center;
+    background-color: black;
+    h1{
+        color: aqua;
+        font-size: 4rem;
+    }
+    p{
+        color: white;
+    }
+    #best-score {
+        color: red;
+        font-size: 1.5rem;
+    }
+    #current-score {
+        color: aqua;
+        font-size: 1.5rem;
+    }
+    button{
+        background-color: aqua;
+        color: black;
+        font-size: 1.5rem;
+        font-family: fantasy;
+    }
+}
+
+.screen2{
+    background-color: black;
+    >div {
+        max-width: 600px;
+    }
+    p.fixed-corner {
+        color: aqua;
+        font-size: 2rem;
+    }
+    .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+    .card{
+        overflow: hidden;
+        height: 120px;
+        flex: 1 1 20%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .front, .back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .front{
+            display: block;
+        }
+        .back{
+            display: none;
+        } 
+    }
+
+    .card.flip .front {
+        display: none;
+    }
+    .card.flip .back{
+        display: flex;
+    }
+    
+    .fixed-corner{
+        position: fixed;
+        top: 0;
+        left: 0;
+        color: white;
+        padding: 15px;
+    }
+}
+
+
+.screen3{
+    background-color: black;
+    text-align: center;
+    h1{
+        color: aqua;
+        font-size: 3.5rem;
+    }
+    p{
+        font-family: fantasy;
+        font-size: 2rem;
+        color: white;
+    }
+    #final-score {
+        color: aqua;
+    }
+    #best-score2 {
+        color: red;
+    }
+    button {
+        font-family: fantasy;
+        background-color: aqua;
+        color: black;
+        font-size: 1.5rem;
+    }
+}
